@@ -24,8 +24,9 @@ background-size: 10px 10px;
  }
 
  .app h1 {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: cursive;     
     color: #12b04e;
     border-bottom: 1px solid #12b04e;
     padding-bottom: 30px;
@@ -46,16 +47,31 @@ background-size: 10px 10px;
     color: #222;
     font-weight: 500;
     width: 100%;
-    border: 1px solid #222;
+    border: 1px solid #12b04e;
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
     cursor: pointer;
+    transition: all 0.3s ease; /* all is for all properties, 0.3s is for speed, ease is for animation */
  }
 
  .btn:hover {
-    background: #222;
+    background: #12b04e;
     color: #fff;
+    opacity: 0.6;
  }
- 
+
+ #next-btn {
+    background: #12b04e;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+
+ }
