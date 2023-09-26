@@ -5,12 +5,11 @@
     box-sizing: border-box;
 }
 
- body {
-    background-color: #e5e5f7;
-opacity: ;
+body {
+background-color: #e5e5f7;
 background-image: radial-gradient(#444cf7 0.5px, #fbdfe8 0.8px);
 background-size: 10px 10px;
- }
+}
 
  .app {
     background: #fff;
@@ -20,8 +19,7 @@ background-size: 10px 10px;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 10px rgba(89, 190, 191, 0.4);
-    
- }
+}
 
  .app h1 {
     font-size: 30px;
@@ -30,7 +28,7 @@ background-size: 10px 10px;
     color: #12b04e;
     border-bottom: 1px solid #12b04e;
     padding-bottom: 30px;
- }
+}
 
  .quiz {
     padding: 20px 0; /* top & bottom, right & left */
@@ -39,7 +37,7 @@ background-size: 10px 10px;
  .quiz h2 {
     font-size: 18px;
     font-weight: 600;
-    color: #12b04e;
+    color: #519ffd;
  }
 
  .btn {
@@ -54,13 +52,17 @@ background-size: 10px 10px;
     text-align: left;
     cursor: pointer;
     transition: all 0.3s ease; /* all is for all properties, 0.3s is for speed, ease is for animation */
- }
+}
 
- .btn:hover {
-    background: #12b04e;
+ .btn:hover:not([disabled]) { /* hover works only if the button is not disabled */
+    background: #519ffd;  
     color: #fff;
     opacity: 0.6;
- }
+}
+
+.btn:disabled {
+    cursor: no-drop; /* cursor will become no-drop when the button is disabled */
+}
 
  #next-btn {
     background: #12b04e;
@@ -73,5 +75,13 @@ background-size: 10px 10px;
     border-radius: 5px;
     display: none;
     cursor: pointer;
+}
 
- }
+ .correct {
+    background: #9aeabc;
+}
+
+ .incorrect {
+    background: #ff9393
+}
+ 
